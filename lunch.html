@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <title>Lunch Page</title>
+    <body>
+        <h1>Chandana Aluri oders a lunch</h1>
+        <form>
+            <label for="drink">Drink</label>
+            <input type="checkbox" id="drink" value="drink"><br/>
+    
+            <label for="side">Side</label>
+            <input type="checkbox" id="side" value="side"><br/>
+    
+            <label for="in">Eat in</label>
+            <input type="checkbox" id="in" value="in"><br/><br/>
+    
+            <button type="button" onclick="startLunch()">Start a Lunch Order</button>
+        </form>
+        <form>
+            <label for="property">Enter property:</label>
+            <input type="text" id="property" value="entree"><br/>
+    
+            <label for="value">Set it to:</label>
+            <input type="text" id="value"><br/><br/>
+    
+            <button type="button" onclick="updateLunch()">Update the Lunch</button>
+        </form>
+        <div id="lunch-result"></div>
+    
+        <script>
+            let my_lunch = {};
+            function startLunch() {
+                my_lunch = {};
+                my_lunch.drink = document.getElementById('drink').checked;
+                my_lunch.side = document.getElementById('side').checked;
+                my_lunch.in = document.getElementById('in').checked;
+                document.getElementById('lunch-result').innerHTML = JSON.stringify(my_lunch, null, 2);
+            }
+            function updateLunch() {
+                let property = document.getElementById('property').value;
+                let value = document.getElementById('value').value;
+                my_lunch[property] = value;
+                document.getElementById('lunch-result').innerHTML = JSON.stringify(my_lunch, null, 2);
+            }
+        </script>
+    </body>
+</html>
