@@ -18,7 +18,7 @@ form#colorForm {
     margin: 50px auto; /* Center the form */
     max-width: 400px; /* Set a maximum width */
     padding: 30px; /* Add padding inside the form */
-    background-color: #ffffff; /* White background */
+    background-color: #e12b2b; /* White background */
     border: 1px solid #dddddd; /* Light grey border */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
