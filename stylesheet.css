@@ -46,7 +46,7 @@ form#colorForm input[type="text"] {
 /* Button styles */
 form#colorForm button {
     width: 100%; /* Full width button */
-    background-color: #ff0099; /* Bootstrap primary color */
+    background-color: #aae775; /* Bootstrap primary color */
     color: white;
     padding: 12px;
     border: none;
