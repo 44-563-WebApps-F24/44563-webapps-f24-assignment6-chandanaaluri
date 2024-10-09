@@ -1,0 +1,113 @@
+/* Base styles */
+body {
+    background-color: #f8f9fa; /* Light grey background */
+    font-family: Arial, sans-serif;
+    color: #333; /* Dark text */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+/* Container and form styles */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form element styling */
+form {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Custom button styles */
+button {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #007bff; /* Bootstrap primary color */
+    border-color: #007bff;
+}
+
+.btn-success {
+    background-color: #28a745; /* Bootstrap success color */
+    border-color: #28a745;
+}
+
+/* Result display box */
+#result {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    background-color: #e9ecef; /* Light grey background */
+}
+
+/* Image styling */
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Custom classes for text colors */
+.text-primary {
+    color: #007bff;
+}
+
+.text-success {
+    color: #28a745;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Spacing utilities */
+.mt-5 {
+    margin-top: 3rem !important;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+.shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+/* Responsive media query for smaller devices */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    form {
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
